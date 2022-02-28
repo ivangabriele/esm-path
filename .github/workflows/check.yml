@@ -61,3 +61,5 @@ jobs:
       - name: Upload coverage
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: yarn codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
