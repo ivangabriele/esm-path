@@ -1,5 +1,5 @@
 {
-  "name": "cross-path",
+  "name": "esm-path",
   "description": "Cross-platform ESM path helpers.",
   "version": "0.0.0",
   "license": "MIT",
@@ -51,9 +51,9 @@
     "url": "https://www.ivangabriele.com"
   },
   "bugs": {
-    "url": "https://github.com/ivangabriele/cross-path/issues"
+    "url": "https://github.com/ivangabriele/esm-path/issues"
   },
-  "homepage": "https://github.com/ivangabriele/cross-path#readme",
+  "homepage": "https://github.com/ivangabriele/esm-path#readme",
   "keywords": [
     "esm",
     "join",
@@ -69,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivangabriele/cross-path.git"
+    "url": "git+https://github.com/ivangabriele/esm-path.git"
   },
   "sideEffects": false
 }
