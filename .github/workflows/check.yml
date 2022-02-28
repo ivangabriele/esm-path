@@ -59,4 +59,5 @@ jobs:
       - name: Test
         run: yarn test:unit --coverage
       - name: Upload coverage
+        if: matrix.os == 'ubuntu-latest'
         run: yarn codecov
