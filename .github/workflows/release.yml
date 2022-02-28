@@ -19,6 +19,8 @@ jobs:
           node-version: 16
       - name: Install
         run: yarn
+      - name: Build
+        run: yarn build
       - name: Release
         run: yarn semantic-release
         env:
