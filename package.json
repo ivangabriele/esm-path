@@ -1,7 +1,7 @@
 {
   "name": "esm-path",
   "description": "Cross-platform ESM path helpers.",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
