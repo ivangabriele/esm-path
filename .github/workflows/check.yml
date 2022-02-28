@@ -1,0 +1,62 @@
+name: Check
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
+        with:
+          cache: yarn
+          node-version: 16
+      - name: Install
+        run: yarn
+      - name: Lint
+        run: yarn test:lint
+
+  type:
+    name: Type
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
+        with:
+          cache: yarn
+          node-version: 16
+      - name: Install
+        run: yarn
+      - name: Type
+        run: yarn test:type
+
+  test_unit:
+    name: Unit Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: macos-latest
+          - os: ubuntu-latest
+          - os: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.5.1
+        with:
+          cache: yarn
+          node-version: 16
+      - name: Install
+        run: yarn
+      - name: Test
+        run: yarn test:unit --coverage
+      - name: Upload coverage
+        run: yarn codecov

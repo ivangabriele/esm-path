@@ -1,0 +1,46 @@
+{
+  "extends": "@ivangabriele/eslint-config-typescript-base",
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["dist/", "node_modules/"],
+  "rules": {
+    "import/no-default-export": "error",
+    "import/prefer-default-export": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js", "**/*.jsx", "**/*.test.ts", "**/*.tsx"],
+      "plugins": ["jest"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+
+        "jest/no-disabled-tests": "error",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "error",
+        "jest/valid-expect": "error"
+      }
+    },
+    {
+      "files": ["config/**/*.js", "config/**/*.ts"],
+      "plugins": ["jest"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+
+        "import/no-default-export": "off"
+      }
+    }
+  ]
+}

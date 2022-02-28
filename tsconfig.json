@@ -1,0 +1,5 @@
+{
+  "extends": "@ivangabriele/tsconfig-node",
+  "exclude": ["dist/*", "node_modules/*"],
+  "include": ["**/*.cjs", "**/*.js", "**/*.mjs", "**/*.ts"]
+}
