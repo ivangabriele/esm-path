@@ -100,4 +100,26 @@ describe(`getAbsolutePath()`, () => {
       expect(stats.isDirectory()).toStrictEqual(true)
     })
   })
+
+  describe(`with a non-existing path`, () => {
+    test(`should return a non-existing path`, async () => {
+      const result = getAbsolutePath(import.meta.url, './stubs/directory/no-file.txt')
+
+      if (process.platform === 'win32') {
+        expect(result).toMatch(/^[A-Z]:/)
+        expect(result).toMatch(/\\src\\__tests__\\stubs\\directory\\no-file.txt$/)
+      } else {
+        expect(result).toMatch(/^\//)
+        expect(result).toMatch(/\/src\/__tests__\/stubs\/directory\/no-file.txt$/)
+      }
+    })
+
+    test(`should be non-existing file or directory`, async () => {
+      const result = getAbsolutePath(import.meta.url, './stubs/directory/no-file.txt')
+
+      const call = async () => fs.lstat(result)
+
+      await expect(call()).rejects.toThrow()
+    })
+  })
 })
