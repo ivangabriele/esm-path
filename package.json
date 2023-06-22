@@ -20,7 +20,7 @@
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
     "@ivangabriele/commitlint-config": "1.0.6",
-    "@ivangabriele/eslint-config-typescript-base": "4.1.1",
+    "@ivangabriele/eslint-config-typescript-base": "7.1.1",
     "@ivangabriele/prettier-config": "3.1.0",
     "@ivangabriele/semantic-release-config-base": "2.1.0",
     "@ivangabriele/tsconfig-node": "1.2.2",
