@@ -637,10 +637,10 @@
   resolved "https://registry.yarnpkg.com/@ivangabriele/commitlint-config/-/commitlint-config-1.0.6.tgz#9cef204ab6c939b030a005490d49218984f37282"
   integrity sha512-l81vM90B//z1V6oApwItvH32UaGDmYp0z9Xnh6ZYRHz1oeFLgfyFNXNNOl8FFYxdI8E8VQEI6kc0uE3W3lVKRw==
 
-"@ivangabriele/eslint-config-typescript-base@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@ivangabriele/eslint-config-typescript-base/-/eslint-config-typescript-base-4.1.1.tgz#91ecf0fe8f51cf2a6c75ebc287857ddd13aabbe3"
-  integrity sha512-FnXrChJiS20BdL2zCuG+jLXKKk+SNXJbOpaIetWihebIY+0WL4kVH7YntONSNStx1FeS26YsA9Jhaw8owDsjxQ==
+"@ivangabriele/eslint-config-typescript-base@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@ivangabriele/eslint-config-typescript-base/-/eslint-config-typescript-base-10.0.0.tgz#c594e78e0f639d29611f89eba5f61415eb5b76d2"
+  integrity sha512-iv2psSHZtUqdTbpCCA0h1d2TTbxy+YsQm5ZeGjRKWasiPci9tjzOalGtkztf+0gZXeOk/qODr4V7GJZLTkdl3Q==
 
 "@ivangabriele/prettier-config@3.1.0":
   version "3.1.0"
