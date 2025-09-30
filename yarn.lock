@@ -659,10 +659,10 @@
     "@semantic-release/release-notes-generator" "10.0.3"
     semantic-release "19.0.2"
 
-"@ivangabriele/tsconfig-node@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@ivangabriele/tsconfig-node/-/tsconfig-node-1.2.2.tgz#54cd28a6f9d3dc7c82376855b043549dcfd0e607"
-  integrity sha512-vfAhOXInPb37y2ZIraSPjVw8nyepxOmikYKrHsTCc2mSEiKWhTd+GdXq6fc5q9wExxcAeZ3GG4oeUHIBijkujQ==
+"@ivangabriele/tsconfig-node@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ivangabriele/tsconfig-node/-/tsconfig-node-2.0.0.tgz#58c7f51aa6aac514763fef620bc3b07ea2aecfda"
+  integrity sha512-/O8lC0VdUtIfh8+lcIqG92P4HxBGkT66wrqDbJbTUVNT16av+MgOjsoketVBDHde26YXQrK51+Yfo0Bt1wTXzw==
 
 "@jest/console@^29.6.1":
   version "29.6.1"
